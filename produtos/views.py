@@ -9,5 +9,5 @@ def listagem(request):
 
 def detalhes(request, id):
     aluno = models.aluno.objects.get(id=id)
-    return render(request, 'produtos/listagem.html', {'alunos': alunos})
+    return render(request, 'produtos/listagem.html', {'aluno': aluno})
     
